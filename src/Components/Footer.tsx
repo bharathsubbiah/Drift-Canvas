@@ -1,4 +1,5 @@
 import { FormEvent } from "react";
+// @ts-ignore: Allow importing CSS without type declarations
 import "./Footer.css";
 import Logo from "../Images/Logo.png";
 
