@@ -1,0 +1,196 @@
+
+.products-page {
+  background: #ffffff;
+  min-height: 100vh;
+  padding: 80px 0;
+  color: #000000;
+}
+
+
+.products-header {
+  margin-bottom: 60px;
+}
+
+.mini-title {
+  color: #656565;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.main-title {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+.sub-title {
+  color: #6f6d6d;
+  max-width: 600px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+.products-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-count {
+  color: #6f6d6d;
+  font-size: 16px;
+  margin: 0;
+}
+
+
+.sort-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sort-label {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.custom-select {
+  background: #1b1b1b;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  outline: none;
+  min-width: 220px;
+  cursor: pointer;
+}
+
+.custom-select:focus {
+  border-color: #666;
+}
+
+
+.modern-card {
+  background: #171717;
+  border-radius: 22px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  border: 1px solid #262626;
+  height: 100%;
+}
+
+.modern-card:hover {
+  transform: translateY(-10px);
+  border-color: #555;
+}
+
+
+.card-image-box {
+  position: relative;
+  overflow: hidden;
+  background: #111;
+}
+
+.card-image {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.modern-card:hover .card-image {
+  transform: scale(1.08);
+}
+
+
+.category-badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: rgba(251,22,33,1);
+  padding: 8px 14px;
+  border-radius: 50px;
+  font-size: 13px;
+  color: #fff;
+}
+
+
+.card-content {
+  padding: 24px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-price {
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0;
+  color: #fff;
+}
+
+
+.cart-btn {
+  width: 90px;
+  height: 45px;
+  border: none;
+  border-radius: 12px;
+  background: #fff;
+  color: #111;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.cart-btn:hover {
+  background: #fb1621;
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+
+  .main-title {
+    font-size: 42px;
+  }
+
+  .sub-title {
+    font-size: 16px;
+  }
+
+  .card-image {
+    height: 280px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-price {
+    font-size: 22px;
+  }
+
+  .products-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}

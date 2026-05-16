@@ -1,0 +1,66 @@
+  .hero-section {
+          height: 300px;
+          background-color: #fb1621;
+       
+        }
+
+        .card {
+          background: rgba(255, 255, 255, 0.75);
+          border-radius: 15px;
+          box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+          transition: 0.3s;
+        }
+
+        .card:hover {
+          transform: translateY(-5px);
+        }
+
+        .input-group-text {
+          background: #fff;
+          border-right: none;
+        }
+
+        .form-control {
+          border-left: none;
+        }
+
+        .btn-send {
+          background-color: #000;
+          color: white;
+          border: none;
+          padding: 10px;
+          border-radius: 8px;
+          transition: 0.3s;
+        }
+
+        .btn-send:hover{
+            background-color: #fb1621;
+            color: white;
+        }
+        .info-item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 15px;
+        }
+
+        .info-item i {
+          font-size: 20px;
+          color: #000;
+        }
+
+        .info-item i:hover{
+            color: #fb1621;
+        }
+
+        .map-card {
+          border-radius: 15px;
+          overflow: hidden;
+          box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        @media(max-width: 768px) {
+          .hero-section {
+            height: 200px;
+          }
+        }

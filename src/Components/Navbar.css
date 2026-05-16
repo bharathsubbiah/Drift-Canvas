@@ -1,0 +1,206 @@
+body{
+  background: black;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-navbar{
+  background: #000;
+  min-height: 65px;
+  padding: 6px 0;
+  border-top: 1px solid #1d2a35;
+  border-bottom: 1px solid #1d2a35;
+}
+
+.logo{
+  width: 140px;
+  object-fit: contain;
+}
+
+.navbar-nav .nav-link{
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover{
+  color: #fb1621;
+}
+
+.navbar-nav .nav-link.active{
+  color: #fb1621;
+  font-weight: 700;
+}
+
+.icon-link{
+  text-decoration: none;
+}
+
+.icons i{
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icons i:hover{
+  color: #fb1621;
+}
+
+/* Toggle */
+
+.navbar-toggler{
+  border: none;
+  padding: 0;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+.navbar-toggler-icon{
+  filter: invert(1);
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+/* Cart */
+
+.cart-icon{
+  text-decoration: none;
+}
+
+.cart-wrapper{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+.cart-wrapper i{
+  transition: 0.3s;
+}
+
+.cart-wrapper:hover i{
+  color: #fb1621;
+}
+
+.cart-count{
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  width: 22px;
+  height: 22px;
+  background: #fb1621;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 0.4s ease;
+}
+
+.cart-bounce{
+  animation: crazyCart 0.7s ease;
+}
+
+@keyframes crazyCart{
+
+  0%{
+    transform: scale(1)
+      rotate(0deg);
+  }
+
+  20%{
+    transform: scale(1.5)
+      rotate(-18deg);
+  }
+
+  40%{
+    transform: scale(1.2)
+      rotate(18deg);
+  }
+
+  60%{
+    transform: scale(1.35)
+      rotate(-10deg);
+  }
+
+  80%{
+    transform: scale(1.1)
+      rotate(8deg);
+  }
+
+  100%{
+    transform: scale(1)
+      rotate(0deg);
+  }
+
+}
+
+@keyframes pulse{
+
+  0%{
+    transform: scale(0);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 991px){
+
+  .custom-navbar{
+    padding: 10px 0;
+  }
+
+  .navbar-collapse{
+    padding-top: 20px;
+    text-align: center;
+    background: #000;
+  }
+
+  .navbar-nav{
+    gap: 10px;
+  }
+
+  .icons{
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logo{
+    width: 120px;
+  }
+
+}
+
+@media (max-width: 576px){
+
+  .custom-navbar{
+    min-height: 60px;
+  }
+
+  .navbar-nav .nav-link{
+    font-size: 14px;
+  }
+
+  .icons i{
+    font-size: 18px;
+  }
+
+  .logo{
+    width: 110px;
+  }
+
+}
