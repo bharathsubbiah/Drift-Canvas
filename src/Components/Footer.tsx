@@ -59,12 +59,12 @@ const Footer: React.FC = () => {
                   </li>
 
                   <li>
-                    <Link to="/shop">Shop</Link>
+                    <Link to="/login">Login</Link>
                   </li>
 
                   <li>
-                    <Link to="/track-order">
-                      Track Order
+                    <Link to="/signup">
+                      Signup
                     </Link>
                   </li>
 
