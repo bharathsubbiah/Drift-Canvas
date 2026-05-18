@@ -60,11 +60,11 @@ const Footer: React.FC = () => {
                   </li>
 
                   <li>
-                    <Link to="/login">Login</Link>
+                    <Link to="/login" target="_blank">Login</Link>
                   </li>
 
                   <li>
-                    <Link to="/signup">
+                    <Link to="/signup" target="_blank">
                       Signup
                     </Link>
                   </li>
@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
                   </li>
 
                   <li>
-                    <Link to="/porsche">Porsche</Link>
+                    <Link to="/gtr">Porsche</Link>
                   </li>
 
                   <li>

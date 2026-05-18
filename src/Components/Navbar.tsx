@@ -3,10 +3,9 @@ import React, {
   useState,
 } from "react";
 
+// @ts-ignore: allow importing CSS side-effect without separate type declarations
 import "./Navbar.css";
-
 import Logo from "../Images/Logo.png";
-
 import {
   Link,
   NavLink,
@@ -206,7 +205,7 @@ const Navbar: React.FC = () => {
             {/* Login */}
             <Link
               to="/login"
-              className="icon-link"
+              className="icon-link" target="_blank"
             >
 
               <i className="bi bi-person"></i>
